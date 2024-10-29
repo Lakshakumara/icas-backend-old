@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SHApplictionFront" pageWidth="595" pageHeight="842" columnWidth="451" leftMargin="72" rightMargin="72" topMargin="36" bottomMargin="36" uuid="440d2da1-762d-40a9-8c67-784abc3d0a51">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="506"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="480"/>
+	<property name="com.jaspersoft.studio.unit." value="inch"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="inch"/>
+	<style name="Style1"/>
+	<parameter name="voucherId" class="java.util.Date" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="requestAmount" class="java.lang.Double"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="paidAmount" class="java.lang.Double"/>
+	<variable name="totalPaid" class="java.lang.Double" calculation="Sum">
+		<variableDescription><![CDATA[Total Paid Amount]]></variableDescription>
+		<variableExpression><![CDATA[$F{paidAmount}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="71" y="-10" width="259" height="30" uuid="36b4e2f0-b3ec-4365-ab4a-dc69820bb393"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[The Open University of Sri Lanka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="25" width="259" height="30" uuid="0046b65c-2819-4239-b648-db11c5ebd209"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[General Administration Division]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="-10" width="160" height="64" uuid="2f481add-08b0-4b63-ac44-a852bbadde4a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tele. No: 0112-881209/338/545
+Fax No: 0112-809027
+E-Mail: sarga@ou.ac.lk]]></text>
+			</staticText>
+			<image onErrorType="Blank">
+				<reportElement x="0" y="-10" width="60" height="70" uuid="b30e0433-9539-405e-baec-a8b869e95674"/>
+				<imageExpression><![CDATA["ousl_logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="81" y="3" width="289" height="47" uuid="9fac8047-5dd9-42f8-9c08-29917e6ca55a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Voucher List]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="100" height="30" uuid="1e2b67f1-93c8-4d93-941c-4caca2b0d2f4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Generated on]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="451" height="1" uuid="aba72f92-c9aa-4a19-8a96-ca6246f6a18b">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<textField pattern="yyyy-MMM-d h:mm:ss a" isBlankWhenNull="true">
+				<reportElement x="100" y="50" width="351" height="30" uuid="adcac685-70f5-4b69-83d9-22c211e6fd05"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{voucherId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="28">
+			<staticText>
+				<reportElement x="48" y="0" width="192" height="28" uuid="712fa6a5-bad3-4855-9856-546eaf7d33c7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bf3753dd-2616-4746-81db-630686ccaea8"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="0" width="46" height="28" uuid="4da9e617-c2c6-433a-ad4c-84b1ebfbeae9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5e8265fb-5c0b-49bd-9626-e8d141a9bb59"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Claim Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="90" height="28" uuid="69c36f38-bcdb-4d3f-b9ca-e24816882516">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27dbca3a-4ad1-4cda-a219-a5c2fb36cc63"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Request Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="0" width="122" height="28" uuid="2b9aa5ae-0fc5-47fd-9851-ea263464a4fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84341d2c-5019-4912-b8de-3a92bd0c2935"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paid Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="48" y="0" width="192" height="20" uuid="98a89fd8-5047-448a-bfa8-ea48cc80354b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bf3753dd-2616-4746-81db-630686ccaea8"/>
+					<property name="com.jaspersoft.studio.unit.height" value="inch"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="0" width="46" height="20" uuid="c56a0597-5b0f-4496-9337-6c8f499375ad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5e8265fb-5c0b-49bd-9626-e8d141a9bb59"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00#;#,##0.00#-" isBlankWhenNull="true">
+				<reportElement x="240" y="0" width="90" height="20" uuid="da556fc1-be7d-4caa-a000-b8f39c73e525">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27dbca3a-4ad1-4cda-a219-a5c2fb36cc63"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{requestAmount}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00#;#,##0.00#-" isBlankWhenNull="true">
+				<reportElement x="329" y="0" width="122" height="20" uuid="59b5e06b-91ba-4d40-88df-d5ad99c6e770">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84341d2c-5019-4912-b8de-3a92bd0c2935"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{paidAmount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32">
+			<textField pattern="Rs #,##0.00" isBlankWhenNull="true">
+				<reportElement x="330" y="0" width="121" height="30" uuid="450d6cad-555f-46d5-b616-02c5973ac15a"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totalPaid}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="57">
+			<staticText>
+				<reportElement x="2" y="40" width="134" height="16" uuid="5074996d-b059-4672-8161-bdd311072c69"/>
+				<text><![CDATA[Checked By]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="40" width="114" height="16" uuid="21a1bdb0-98ac-40a0-a853-ae38288db76f"/>
+				<text><![CDATA[Approved By]]></text>
+			</staticText>
+			<textField pattern="yyyy-MM-d h:mm:ss a" isBlankWhenNull="true">
+				<reportElement x="293" y="41" width="156" height="14" uuid="a0385121-6a97-44c3-ae0e-c264e9299462"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="4" width="46" height="30" uuid="ca326b52-884b-43ad-ae84-a5b7af6b67bd"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="409" y="4" width="40" height="30" uuid="1656dcbd-dd4c-4d28-9c4b-d0a5a30eb8ca"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

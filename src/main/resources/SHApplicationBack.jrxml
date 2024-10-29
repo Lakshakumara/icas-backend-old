@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SHApplictionBack" pageWidth="595" pageHeight="842" columnWidth="451" leftMargin="72" rightMargin="72" topMargin="36" bottomMargin="36" uuid="440d2da1-762d-40a9-8c67-784abc3d0a51">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="506"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="480"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="requestAmount" class="java.lang.Double"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="requestFor" class="java.lang.String"/>
+	<field name="claimDate" class="java.sql.Date"/>
+	<field name="member" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="607" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="ceb391e4-a50d-430a-a1eb-ca9119c16cd4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Please Forward]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="280" height="59" uuid="27d275ef-aad4-4007-881d-52a31f6189b6"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Original receipts for all payments
+Original detail for all payments
+Diagnosis Card
+Fully Completed claim form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="450" height="70" uuid="b0d25130-abf5-41f6-8475-1f6d78733f56"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="11"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[                    	I hear by declare that I have received the injuries above described and suffering from illness as above described and I claim reimbursement under the above scheme respect thereof I hereby warrant that the above statements and facts are true and that I have not withheld from the any material information connected with this claim. I merely bear the responsibility of the detail given.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="48" height="20" uuid="744048bd-503c-4f3e-ad71-3a969eef7bf0"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Witness]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="168" width="48" height="20" uuid="4449a987-e4a0-4dff-be83-dd9f7817bb81"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="165" width="150" height="20" uuid="eee6dc4a-58d3-4b29-97bd-6a95feaf32b1"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="137" width="150" height="20" uuid="4980e7ac-ce9a-4c88-85f0-12f1c3a17d50"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="165" width="150" height="20" uuid="45802174-1bfa-4a88-a2ff-5feb8ef44c84"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="137" width="150" height="20" uuid="482e8271-53cb-4f64-bc1f-f46ca466c0a6"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="140" width="68" height="20" uuid="42498f71-09a0-4c91-bea9-abddf5acf955"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="168" width="69" height="20" uuid="65bb36a7-d49e-4742-822b-fa08d65126ca"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="193" width="451" height="20" uuid="489531fc-a3d9-426c-9664-0cb57940e0a0"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[TO BE COMPLETED BY THE PATIENT’S GENERAL PRACTIONER / CONSULTANT]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="190" width="451" height="1" uuid="2c658af9-e6e1-4c5d-944e-a2b8be7eb029">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="222" width="451" height="20" uuid="cd46fbaa-cb06-464e-9c33-5fc050b68e70"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font size="11" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Name of Patient  (In Full):- __________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="242" width="451" height="20" uuid="b5330950-157d-4fa7-8b2b-d66603cdc11e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Condition that necessitated investigation or treatment:- _________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="283" width="451" height="20" uuid="578b1e8d-9ea3-4df9-aaf1-d1f2d56a0ce3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diagnosis of disease:- ______________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="263" width="451" height="20" uuid="a8282e0d-a7f8-4213-9786-a2faae79b2ef"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[General Practitioner by whom referred:- _______________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="344" width="451" height="20" uuid="3bd87eaf-0663-43b7-a1db-da3aeb587040"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[For how long the patient would have suffered from these symptoms and sings?:- ____]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="324" width="451" height="20" uuid="d07797be-d7ae-4a6e-a744-9a5f9b9c352f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Was the onset of illness acute,sub-acute or chronic:- ____________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="303" width="451" height="20" uuid="31169cb7-25ce-49d9-a8cc-451247e9906a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Details of treatment or operation and prognosis:- _______________________________]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="1" y="364" width="451" height="93" uuid="24905d2c-d3ae-4ab3-ad10-7f1b4d426248"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="3" y="1" width="448" height="20" uuid="b9136593-bf4c-4837-bfba-458b119a9561">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="11" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[Please mention whether the patient is hospitalized or not:- YES/NO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="22" width="150" height="20" uuid="1e9e5015-f0a3-42a4-81ff-d0b4bf73da4f">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="11" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[If yes, Pls Provide following,]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="140" y="43" width="70" height="20" uuid="71ce8cd4-530e-4912-8edc-49e464cc75d3"/>
+					<box>
+						<pen lineWidth="1.0" lineStyle="Dashed"/>
+						<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="11" isBold="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="46" width="139" height="20" uuid="9054a6fb-8ab1-4d08-abe5-f6bc697297bf">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="11" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[Period of Hospitalization]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="70" width="98" height="20" uuid="0f7e4576-68aa-46c8-bc12-886aed98c751">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="11" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[Date of admission]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="100" y="70" width="100" height="20" uuid="57612083-1768-4758-b7fe-91b5a09899d0"/>
+					<box>
+						<pen lineWidth="1.0" lineStyle="Dashed"/>
+						<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="11" isBold="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="222" y="70" width="98" height="20" uuid="442b2518-a1fd-4c47-9ff6-0456d1630d22"/>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="11" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Date of Discharge]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="320" y="70" width="100" height="20" uuid="4bd291ed-ac49-4ed9-a87b-2aefa087bace"/>
+					<box>
+						<pen lineWidth="1.0" lineStyle="Dashed"/>
+						<topPen lineWidth="1.0" lineStyle="Dashed" lineColor="#FFFFFF"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="11" isBold="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="1" y="464" width="451" height="32" uuid="f9f97ae7-ce95-4a9a-b7b3-3d5e70fa579b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[State approximately when, in your opinion the ailment could have BEGUN or been CONTRACTED by the patient]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="496" width="451" height="30" uuid="4c7b398b-f7e7-4ff9-9853-6e6c0243907a"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[I certify that I am the General Practitioner / Surgeon / Consultant of the patient of the referred to above, and that I approved the services for which this claim is made.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="526" width="451" height="20" uuid="34dca5f4-7fa7-4294-81ba-0be68c19a660"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name of the practitioner / Surgeon / Consultant:- _______________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="546" width="451" height="20" uuid="998b6291-def9-449d-ae64-50bb9d2dc135"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qualification:- _____________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="566" width="451" height="20" uuid="b54a4c2d-a11a-4ce4-9d92-38993b163146"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font size="11" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[address:- 	___________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="587" width="450" height="20" uuid="c0e89951-7938-4359-b56b-c64149005c12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TL. Phone No:- ________________________]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageFooter>
+		<band height="94" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="32" y="30" width="121" height="20" uuid="09dc532c-39fa-468c-8efe-62e704f05e5a"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.25" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="50" width="180" height="40" uuid="41b64aa7-cc61-487f-a85a-7f1afe327e92"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="50" width="270" height="40" uuid="d3fa8f19-505b-4772-8d7d-a9b280a84c21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Signature with the rubber stamp. Who attended on this patient for this aliment]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="192" y="30" width="260" height="20" uuid="e0524bdd-82f9-4a32-843c-ec7c683fe0fd"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.25" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
